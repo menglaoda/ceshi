@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html manifest="demo.appcache">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>	
+		<script>
+
+		         //利用定时器隔一定时间自动更新一下缓存
+    setInterval(function(){
+            applicationCache.update();
+    },50000);
+	window.applicationCache.addEventListener("updateready",function(){
+        alert("缓存更新完成");
+},false);
+</script>
+<link href="css/index.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<div >
+			<img src="img/mm003.jpg" />
+			<a href="index2.html">跳转</a>
+		</div>
+	</body>
+</html>

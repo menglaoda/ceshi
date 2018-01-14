@@ -1,0 +1,13 @@
+CACHE MANIFEST
+#第一行文字，用于声明这是一个manifest缓存文件列表（必须写）
+#version1.05
+
+CACHE:
+css/index.css
+img/mm004.jpg
+
+NETWORK:
+img/mm003.jpg
+
+FALLBACK:
+img/mm004.jpg img/mm003.jpg
